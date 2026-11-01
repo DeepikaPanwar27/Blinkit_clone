@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Homepage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: white;
+        }
+
+        header {
+            height: 104px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            padding: 0 38px;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 45px;
+            font-weight: bold;
+            color: #f8c83e;
+            letter-spacing: -3px;
+        }
+
+        .logo span {
+            color: #55b52d;
+        }
+
+        .delivery h3 {
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+
+        .delivery p {
+            font-size: 15px;
+        }
+
+        .search {
+            width: 48%;
+            height: 57px;
+            background: #f8f8f8;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            padding: 0 18px;
+            gap: 12px;
+        }
+
+        .search input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 17px;
+        }
+
+        .login {
+            font-size: 20px;
+        }
+
+        .cart {
+            background: #0abc42;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        
+        main {
+            max-width: 1574px;
+            width: 90%;
+            margin: 15px auto;
+        }
+
+        
+        .banner img {
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+        }
+
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 23px;
+            margin-top: 35px;
+        }
+
+        .cards img {
+            width: 100%;
+            display: block;
+            border-radius: 20px;
+        }
+
+        
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 27px;
+            margin-top: 37px;
+        }
+
+        .category {
+            text-align: center;
+        }
+
+        .category img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .category p {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                height: auto;
+                flex-wrap: wrap;
+                padding: 15px;
+            }
+
+            .search {
+                width: 100%;
+            }
+
+            main {
+                width: 95%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .categories {
+                grid-template-columns: repeat(5, 1fr);
+                gap: 15px;
+            }
+
+            .category p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+
+        <div class="logo">
+            blink<span>it</span>
+        </div>
+
+        <div class="delivery">
+            <h3>Delivery in 11 minutes</h3>
+            <p>location..</p>
+        </div>
+
+        <div class="search">
+            <span>⌕</span>
+            <input type="text" placeholder='Search "bread"'>
+        </div>
+
+        <div class="login">
+            Login
+        </div>
+
+        <div class="cart">
+            🛒 My Cart
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <img src="Frame-1437256605-2-2.jpg">
+        </section>
+
+        
+        <section class="cards">
+
+            <img src="pharmacy-WEB.jpg" alt="Pharmacy">
+
+            <img src="pet_crystal_WEB-1.png" alt="Pet Care">
+
+            <img src="baby_crystal_WEB-1.png" alt="Baby Care">
+
+        </section>
+
+        
+        <section class="categories">
+
+            <div class="category">
+                <img src="paan-corner_web.jpg">
+                <p>Paan<br>Corner</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-2_10.png">
+                <p>Dairy, Bread<br>& Eggs</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-3_9.png">
+                <p>Fruits &<br>Vegetables</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-4_9.png">
+                <p>Cold Drinks<br>& Juices</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-5_4.png">
+                <p>Snacks &<br>Munchies</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-6_5.png">
+                <p>Breakfast &<br>Instant Food</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-7_3.png">
+                <p>Sweet<br>Tooth</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-8_4.png">
+                <p>Bakery &<br>Biscuits</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-7-1_0.png">
+                <p>Tea, Coffee &<br>Milk Drinks</p>
+            </div>
+
+            <div class="category">
+                <img src="Slice-10.png">
+                <p>Atta, Rice<br>& Dal</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
